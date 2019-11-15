@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>搭建个人博客</title>
+    <url>/2019/11/14/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="主要分为"><a href="#主要分为" class="headerlink" title="主要分为"></a>主要分为</h2><ol>
+<li><h3 id="静态-Hexo-Jekyll-Octopress-可以部署在github-pages上"><a href="#静态-Hexo-Jekyll-Octopress-可以部署在github-pages上" class="headerlink" title="静态 Hexo/Jekyll/Octopress 可以部署在github pages上"></a>静态 Hexo/Jekyll/Octopress 可以部署在github pages上</h3></li>
+<li><h3 id="动态-Ghost、Wordpress"><a href="#动态-Ghost、Wordpress" class="headerlink" title="动态 Ghost、Wordpress"></a>动态 Ghost、Wordpress</h3></li>
+</ol><a id="more"></a>
+<h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><ol>
+<li><p>动态博客的优点</p>
+<ul>
+<li>最后，也列举一下 Ghost 的优点，或许大点的团队更适合它。</li>
+<li>设计感超好的免费、付费模板一大把，比起来，Hexo 的模板像是上个世纪的</li>
+<li>SEO 功能完善，在设计之初就把 SEO 考虑在内的博客系统并不多见</li>
+<li>功能强大很多，GitHub 上 commits 是 Hexo 的 4 倍，功能至少多一倍吧</li>
+<li>社区更活跃，几乎每天都有大量代码提交</li>
+<li>有良好的商业模式支撑，开发、维护的生命期可以更久</li>
+</ul>
+</li>
+<li><p>静态博客的优点</p>
+<ul>
+<li>说实话，Ghost的模板很多都特别有设计感，而且对SEO特别友善，但是出于以下几点考虑，就还是选择了Hexo</li>
+<li>静态博客可以托管第三方，如 Github Pages 和 Coding Pages，节省打理服务器时间</li>
+<li>自然也节省了服务器开销</li>
+<li>不用自己做备份，用git管理文档也更容易回溯历史版本</li>
+<li>静态页面，即使第三方停止服务，也方便找到新的地方部署，不用打包数据库，折腾配置，再迁移到新服务器</li>
+<li>很多人买主机都是讲年的，说不定哪天就忘了，又懒得写，一年打不开都没发现</li>
+<li>最终选择Hexo</li>
+</ul>
+</li>
+</ol>
+<h2 id="1-搭建"><a href="#1-搭建" class="headerlink" title="1.搭建"></a>1.搭建</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br><span class="line">2.换个主题</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ <span class="built_in">cd</span> theme</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/WeicMa/Hexo-Theme-Life themes/life</span><br><span class="line">$ <span class="built_in">cd</span> themes/huxblog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-主题修改配置"><a href="#2-主题修改配置" class="headerlink" title="2.主题修改配置"></a>2.主题修改配置</h2><ul>
+<li>根据你下载的主题名进行修改，主题需放到themes目录</li>
+<li>修改blog目录下的 _config.yml ： theme: life</li>
+</ul>
+<h2 id="3-部署代码到Github"><a href="#3-部署代码到Github" class="headerlink" title="3.部署代码到Github"></a>3.部署代码到Github</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">$ hexo clean</span><br><span class="line">2.生成静态文件</span><br><span class="line"></span><br><span class="line">$ hexo generate</span><br><span class="line">3.部署</span><br><span class="line"></span><br><span class="line">$ hexo deploy</span><br><span class="line">上面2、3两个命令可以合起来</span><br><span class="line"></span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-问题"><a href="#4-问题" class="headerlink" title="4.问题"></a>4.问题</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo d </span><br><span class="line">报错：ERROR Deployer not found: git</span><br><span class="line"></span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line"></span><br><span class="line">要先执行下 npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+
+<p>转：<a href="https://www.jianshu.com/p/75989cd399a6" target="_blank" rel="noopener">https://www.jianshu.com/p/75989cd399a6</a></p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>直接新建</title>
+    <url>/2019/11/11/test/</url>
+    <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>我的第一篇文章，这是标题吗？</title>
+    <url>/2019/11/11/ygy/</url>
+    <content><![CDATA[<p>这里是描述吗？<br>换行怎么用</p><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="我是井加井"><a href="#我是井加井" class="headerlink" title="我是井加井"></a>我是井加井</h1><h1 id="我是一个井"><a href="#我是一个井" class="headerlink" title="我是一个井"></a>我是一个井</h1><h2 id="我是2个井"><a href="#我是2个井" class="headerlink" title="我是2个井"></a>我是2个井</h2><h3 id="我是3个井"><a href="#我是3个井" class="headerlink" title="我是3个井"></a>我是3个井</h3><h4 id="我是4个井"><a href="#我是4个井" class="headerlink" title="我是4个井"></a>我是4个井</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">i am code</span><br><span class="line"></span><br><span class="line">code change</span><br></pre></td></tr></table></figure>
+
+<p>我没有井<br><a href="https://www.baidu.com" target="_blank" rel="noopener">我是链接</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/11/10/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
