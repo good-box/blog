@@ -30,17 +30,26 @@
 </ul>
 </li>
 </ol>
-<h2 id="1-搭建"><a href="#1-搭建" class="headerlink" title="1.搭建"></a>1.搭建</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br><span class="line">2.换个主题</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ <span class="built_in">cd</span> theme</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/WeicMa/Hexo-Theme-Life themes/life</span><br><span class="line">$ <span class="built_in">cd</span> themes/huxblog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br><span class="line">2.换个主题</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ <span class="built_in">cd</span> theme</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/WeicMa/Hexo-Theme-Life themes/life</span><br><span class="line">$ <span class="built_in">cd</span> themes/huxblog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-主题修改配置"><a href="#2-主题修改配置" class="headerlink" title="2.主题修改配置"></a>2.主题修改配置</h2><ul>
+<h2 id="主题修改配置"><a href="#主题修改配置" class="headerlink" title="主题修改配置"></a>主题修改配置</h2><ul>
 <li>根据你下载的主题名进行修改，主题需放到themes目录</li>
-<li>修改blog目录下的 _config.yml ： theme: life</li>
+<li>修改blog根目录下的 _config.yml ： theme: life</li>
 </ul>
-<h2 id="3-部署代码到Github"><a href="#3-部署代码到Github" class="headerlink" title="3.部署代码到Github"></a>3.部署代码到Github</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">$ hexo clean</span><br><span class="line">2.生成静态文件</span><br><span class="line"></span><br><span class="line">$ hexo generate</span><br><span class="line">3.部署</span><br><span class="line"></span><br><span class="line">$ hexo deploy</span><br><span class="line">上面2、3两个命令可以合起来</span><br><span class="line"></span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-问题"><a href="#4-问题" class="headerlink" title="4.问题"></a>4.问题</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo d </span><br><span class="line">报错：ERROR Deployer not found: git</span><br><span class="line"></span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line"></span><br><span class="line">要先执行下 npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-
-
+<h2 id="部署代码到Github"><a href="#部署代码到Github" class="headerlink" title="部署代码到Github"></a>部署代码到Github</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">$ hexo clean</span><br><span class="line">2.生成静态文件</span><br><span class="line"></span><br><span class="line">$ hexo generate</span><br><span class="line">3.部署</span><br><span class="line"></span><br><span class="line">$ hexo deploy</span><br><span class="line">上面2、3两个命令可以合起来</span><br><span class="line"></span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol>
+<li><h3 id="hexo-d-报错：ERROR-Deployer-not-found-git"><a href="#hexo-d-报错：ERROR-Deployer-not-found-git" class="headerlink" title="$ hexo d 报错：ERROR Deployer not found: git"></a>$ hexo d 报错：ERROR Deployer not found: git</h3></li>
+</ol>
+<ul>
+<li>npm install –save hexo-deployer-git<br>要先执行下 npm install –save hexo-deployer-git</li>
+</ul>
+<ol start="2">
+<li><h4 id="hexo-d-每次发布后都需要手动在-github-page-的-setting-里重新设置自定义域名，才能访问网站。"><a href="#hexo-d-每次发布后都需要手动在-github-page-的-setting-里重新设置自定义域名，才能访问网站。" class="headerlink" title="$hexo d 每次发布后都需要手动在 github page 的 setting 里重新设置自定义域名，才能访问网站。"></a>$hexo d 每次发布后都需要手动在 github page 的 setting 里重新设置自定义域名，才能访问网站。</h4></li>
+</ol>
+<ul>
+<li>原因：每次 push，CNAME 都被删掉了，在 hexo 的 source 目录建一个 CNAME，里面写你的域名，这样每次生成的时候就会自带这个文件了。</li>
+</ul>
 <p>转：<a href="https://www.jianshu.com/p/75989cd399a6" target="_blank" rel="noopener">https://www.jianshu.com/p/75989cd399a6</a></p>
 ]]></content>
       <categories>

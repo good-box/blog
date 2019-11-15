@@ -59,7 +59,7 @@
 <meta property="og:site_name" content="GoodBox">
 <meta property="og:description" content="主要分为 静态 Hexo&#x2F;Jekyll&#x2F;Octopress 可以部署在github pages上 动态 Ghost、Wordpress">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2019-11-14T11:59:22.594Z">
+<meta property="og:updated_time" content="2019-11-15T14:01:15.303Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/14/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
@@ -232,10 +232,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-11-14 19:43:55 / 修改时间：19:59:22" itemprop="dateCreated datePublished" datetime="2019-11-14T19:43:55+08:00">2019-11-14</time>
+              <time title="创建时间：2019-11-14 19:43:55" itemprop="dateCreated datePublished" datetime="2019-11-14T19:43:55+08:00">2019-11-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-15 22:01:15" itemprop="dateModified" datetime="2019-11-15T22:01:15+08:00">2019-11-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -286,17 +292,26 @@
 </ul>
 </li>
 </ol>
-<h2 id="1-搭建"><a href="#1-搭建" class="headerlink" title="1.搭建"></a>1.搭建</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br><span class="line">2.换个主题</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ <span class="built_in">cd</span> theme</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/WeicMa/Hexo-Theme-Life themes/life</span><br><span class="line">$ <span class="built_in">cd</span> themes/huxblog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br><span class="line">2.换个主题</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ <span class="built_in">cd</span> theme</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/WeicMa/Hexo-Theme-Life themes/life</span><br><span class="line">$ <span class="built_in">cd</span> themes/huxblog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-主题修改配置"><a href="#2-主题修改配置" class="headerlink" title="2.主题修改配置"></a>2.主题修改配置</h2><ul>
+<h2 id="主题修改配置"><a href="#主题修改配置" class="headerlink" title="主题修改配置"></a>主题修改配置</h2><ul>
 <li>根据你下载的主题名进行修改，主题需放到themes目录</li>
-<li>修改blog目录下的 _config.yml ： theme: life</li>
+<li>修改blog根目录下的 _config.yml ： theme: life</li>
 </ul>
-<h2 id="3-部署代码到Github"><a href="#3-部署代码到Github" class="headerlink" title="3.部署代码到Github"></a>3.部署代码到Github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1.清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">$ hexo clean</span><br><span class="line">2.生成静态文件</span><br><span class="line"></span><br><span class="line">$ hexo generate</span><br><span class="line">3.部署</span><br><span class="line"></span><br><span class="line">$ hexo deploy</span><br><span class="line">上面2、3两个命令可以合起来</span><br><span class="line"></span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-问题"><a href="#4-问题" class="headerlink" title="4.问题"></a>4.问题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d </span><br><span class="line">报错：ERROR Deployer not found: git</span><br><span class="line"></span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line"></span><br><span class="line">要先执行下 npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-
-
+<h2 id="部署代码到Github"><a href="#部署代码到Github" class="headerlink" title="部署代码到Github"></a>部署代码到Github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1.清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line"></span><br><span class="line">$ hexo clean</span><br><span class="line">2.生成静态文件</span><br><span class="line"></span><br><span class="line">$ hexo generate</span><br><span class="line">3.部署</span><br><span class="line"></span><br><span class="line">$ hexo deploy</span><br><span class="line">上面2、3两个命令可以合起来</span><br><span class="line"></span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol>
+<li><h3 id="hexo-d-报错：ERROR-Deployer-not-found-git"><a href="#hexo-d-报错：ERROR-Deployer-not-found-git" class="headerlink" title="$ hexo d 报错：ERROR Deployer not found: git"></a>$ hexo d 报错：ERROR Deployer not found: git</h3></li>
+</ol>
+<ul>
+<li>npm install –save hexo-deployer-git<br>要先执行下 npm install –save hexo-deployer-git</li>
+</ul>
+<ol start="2">
+<li><h4 id="hexo-d-每次发布后都需要手动在-github-page-的-setting-里重新设置自定义域名，才能访问网站。"><a href="#hexo-d-每次发布后都需要手动在-github-page-的-setting-里重新设置自定义域名，才能访问网站。" class="headerlink" title="$hexo d 每次发布后都需要手动在 github page 的 setting 里重新设置自定义域名，才能访问网站。"></a>$hexo d 每次发布后都需要手动在 github page 的 setting 里重新设置自定义域名，才能访问网站。</h4></li>
+</ol>
+<ul>
+<li>原因：每次 push，CNAME 都被删掉了，在 hexo 的 source 目录建一个 CNAME，里面写你的域名，这样每次生成的时候就会自带这个文件了。</li>
+</ul>
 <p>转：<a href="https://www.jianshu.com/p/75989cd399a6" target="_blank" rel="noopener">https://www.jianshu.com/p/75989cd399a6</a></p>
 
     </div>
@@ -360,7 +375,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#主要分为"><span class="nav-number">1.</span> <span class="nav-text">主要分为</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态-Hexo-Jekyll-Octopress-可以部署在github-pages上"><span class="nav-number">1.1.</span> <span class="nav-text">静态 Hexo/Jekyll/Octopress 可以部署在github pages上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态-Ghost、Wordpress"><span class="nav-number">1.2.</span> <span class="nav-text">动态 Ghost、Wordpress</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对比"><span class="nav-number">2.</span> <span class="nav-text">对比</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-搭建"><span class="nav-number">3.</span> <span class="nav-text">1.搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-主题修改配置"><span class="nav-number">4.</span> <span class="nav-text">2.主题修改配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-部署代码到Github"><span class="nav-number">5.</span> <span class="nav-text">3.部署代码到Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-问题"><span class="nav-number">6.</span> <span class="nav-text">4.问题</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#主要分为"><span class="nav-number">1.</span> <span class="nav-text">主要分为</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态-Hexo-Jekyll-Octopress-可以部署在github-pages上"><span class="nav-number">1.1.</span> <span class="nav-text">静态 Hexo/Jekyll/Octopress 可以部署在github pages上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态-Ghost、Wordpress"><span class="nav-number">1.2.</span> <span class="nav-text">动态 Ghost、Wordpress</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对比"><span class="nav-number">2.</span> <span class="nav-text">对比</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建"><span class="nav-number">3.</span> <span class="nav-text">搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题修改配置"><span class="nav-number">4.</span> <span class="nav-text">主题修改配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署代码到Github"><span class="nav-number">5.</span> <span class="nav-text">部署代码到Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">6.</span> <span class="nav-text">问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-d-报错：ERROR-Deployer-not-found-git"><span class="nav-number">6.1.</span> <span class="nav-text">$ hexo d 报错：ERROR Deployer not found: git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-d-每次发布后都需要手动在-github-page-的-setting-里重新设置自定义域名，才能访问网站。"><span class="nav-number">6.1.1.</span> <span class="nav-text">$hexo d 每次发布后都需要手动在 github page 的 setting 里重新设置自定义域名，才能访问网站。</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
