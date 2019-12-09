@@ -1,13 +1,401 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>其他</title>
+    <url>/2019/11/28/%E5%85%B6%E4%BB%96/</url>
+    <content><![CDATA[<p>1.var delt = this.delImg.map(function (value) {<br>      let str = BASEURL + ‘/static/‘<br>      return value.replace(str, “”);<br>    });</p><a id="more"></a>
+<p>   替换文本</p>
+<p>2.(?&lt;=upimages).*</p>
+<p>  (?=upimages).*</p>
+<p>  表名.*update     （正则文本）</p>
+<p>  var substr = res.data.match(/(?=upimages).*/)[0];</p>
+<p>3.src.splice(index, 1);     去除数组的某一项</p>
+<p>4.delt.join(‘,’);     数组分隔成字符串</p>
+<p>5.JSON.parse(res.data);    json字符转换</p>
+<p>6.continue语句的作用是跳过本次循环体中余下尚未执行的语句，立即进行下一次的循环条件判定，可以理解为仅结束本次循环。</p>
+<p>break：</p>
+<p>(1).结束当前整个循环，</p>
+<p>7.js数组与字符串的相互转换<br>一、数组转字符串</p>
+<p>需要将数组元素用某个字符连接成字符串，示例代码如下：</p>
+<p>var a, b,c;<br>a = new Array(a,b,c,d,e);<br>b = a.join(‘-‘); //a-b-c-d-e  使用-拼接数组元素<br>c = a.join(‘’); //abcde</p>
+<p>二、字符串转数组</p>
+<p>实现方法为将字符串按某个字符切割成若干个字符串，并以数组形式返回，示例代码如下：</p>
+<p>var str = ‘ab+c+de’;<br>var a = str.split(‘+’); // [ab, c, de]<br>var b = str.split(‘’); //[a, b, +, c, +, d, e]</p>
+<p>8.数据库 like 查询  <a href="https://www.runoob.com/mysql/mysql-like-clause.html" target="_blank" rel="noopener">https://www.runoob.com/mysql/mysql-like-clause.html</a><br>  ‘%a’     //以a结尾的数据<br>‘a%’     //以a开头的数据<br>‘%a%’    //含有a的数据<br>‘<em>a</em>‘    //三位且中间字母是a的<br>‘<em>a’     //两位且结尾字母是a的<br>‘a</em>‘     //两位且开头字母是a的</p>
+<ol start="9">
+<li>JS-向数组指定位置添加元素</li>
+</ol>
+<ol start="10">
+<li>jenkins 代码发布工具<br>composer  php 包依赖管理工具</li>
+</ol>
+<p>11、一楼就不要来误导群众了，fork的意思是从别人的代码库中复制一份到你自己的代码库，与普通的复制不同，fork包含了原有库中的所有提交记录，fork后这个代码库是完全独立的，属于你自己，你可以在自己的库中做任何修改，当然也可以通过Pull Request向原来的库提交合并请求。</p>
+<p>顺便说一下Watch和Star：</p>
+<p>Watch，就是一楼说的关注，关注后，代码库中有新的commit你都会收到通知；</p>
+<p>Star，与watch不同，star相当于收藏，你可以方便地找到你star过的库，但是不会收到关于那个库的任何通知。</p>
+<ol start="12">
+<li>webhook  (gig勾子) </li>
+</ol>
+<?php
+
+$cmd = "cd  /www/wwwroot/open.youshicloud.com/  && git reset --hard origin/master && sudo git pull origin master && sudo git pull --all && sudo git pull origin master  2>&1";
+
+//$cmd = "cd  /www/wwwroot/open.youshicloud.com/  && git pull &&sudo git pull --all && sudo git pull origin master 2>&1";
+
+$res = array();
+exec($cmd,$res);
+var_dump($res);
+
+
+13.window.location.href='http://www.baidu.com';     跳转页面
+  window.location.reload();  刷新页面
+
+
+旧的复制过来
+
+请求地址：http://www.house.com/admin/base/login?username=admin&password=123456
+
+
+"authKey": "880b2281c1b3fe8ae8d2b91f8ad7359a",
+
+ "sessionId": "8f6e4pp5b8u0tpbe99f7tluur4",
+
+
+
+
+http://www.house.com/admin/users/enables
+
+
+
+
+#旧的写法git reset --hard origin/pt   
+#旧的写法git pull origin pt   拉取远程分支pt
+git branch wsw         创建分支wsw
+git checkout wsw     切换分支wsw
+git branch -D pt        删除分支pt
+git checkout -t origin/pt    切换远程分支pt
+git branch -D wsw 删除分支wsw
+
+
+
+1. 本地php 路径 D:\mydev\phpstudy\PHPTutorial\php\php-7.0.12-nts\php.exe
+
+
+2. 日志 （tp5)
+use think\Log;
+Log::record($log, 'info');
+
+3. 日志 （微擎外卖）
+ load()->func('logging');
+ logging_run('ygy@'.$appid.'@1'.$openid.'@2'.$mch_id.'@3'.$key.'@4'.$out_trade_no.'@5'.$body.'@6'.$total_fee.'@7'.$root.'@8');
+
+
+3. src="data:image/png;base64,"
+
+4. 请求地址  https://cs.say52.cn/api/Wxapps/doPageOrderCode
+
+5. $_W 获取前端传的参数
+
+6. serialize($hxinfo) 可以转成json字符
+
+7. 员工表加个字段，，，是否为核销员
+
+8. 关联表，左关联，右关联，，，，，通过一张表的一个字段关联另一张表（避免修改多张表）
+
+9. hxmm  核销密码调的方法        
+  ims_sudu8_page_pt_pro   拼团商品表    
+  ims_sudu8_page_pt_share  拼团状态表
+   ims_sudu8_page_staff     员工表
+   ims_sudu8_page_pt_order   拼团状态表
+   ims_sudu8_page_user     授权用户表
+
+
+10. return $this->fetch(staffadd);    返回对应的哪个页面
+
+
+
+
+11. 
+<? ?><p>是短标签<br><?php ?>是长标签<br>在php的配置文件（php.ini）中有一个short_open_tag的值，开启以后可以使用PHP的短标签：<? ?><br>同时，只有开启这个才可以使用 <?= 以代替 <? echo 。在CodeIgniter的视频教程中就是用的这种方式。
+但是这个短标签是不推荐的，使用<?php ?>才是规范的方法。只是因为这种短标签使用的时间比较长，这种特性才被保存了下来。</p>
+<ol start="12">
+<li>当文件是PHP代码和HTML代码混合的时候，PHP结束标签?&gt;不允许省略<br>当文件是纯PHP代码的时候，不建议使用结束标签?&gt;，理由有：</li>
+</ol>
+<p>可以避免在 PHP 结束标记之后万一意外加入了空格或者换行符，会导致 PHP 开始输出这些空白，<br>影响最多的时候应该是在使用 include 和 require的时候，加了结束标签如果又在后面加了空格都有可能会引起多余的输出、php错误、之后的输出无法显示、空白页，<br>忽略结束标签不仅能少些两个字符，还能让我们的开发更顺利。</p>
+<ol start="13">
+<li><p>phpstorm 调试总是断点在index.php的第一行<br>点击菜单Run，在弹出菜单中取消勾选“Break at first line in PHP scripts”</p>
+</li>
+<li><p>Xdebug helper    （phpstrom调试）<br>F8 一行行调试<br>F9 跳到下个断点<br>F7 跳到下个方法<br>ctrl + F8  跳出当前方法</p>
+</li>
+</ol>
+<ol start="15">
+<li>git 强制写入帐号密码：<a href="http://ygy:ygy@116.255.174.19:3000/wsw/open.youshicloud.com.git" target="_blank" rel="noopener">http://ygy:ygy@116.255.174.19:3000/wsw/open.youshicloud.com.git</a></li>
+</ol>
+<ol start="16">
+<li><p>git log</p>
+<p>git reset xxx</p>
+<p>git pull –all</p>
+</li>
+</ol>
+<ol start="17">
+<li><p>php事务<br>Db::startTrans();</p>
+<pre><code>try{
+
+    $res= Db::name(&apos;member&apos;)-&gt;where(&apos;member_id&apos;,&apos;=&apos;,$member_id)-&gt;update($data);
+    if(!$res){
+        throw new \Exception(&quot;修改代理用户失败&quot;);
+    }
+    Db::table(&apos;ims_admin&apos;)-&gt;where(&apos;uid&apos;,&apos;=&apos;, $api_uid)-&gt;update($data1);
+    Db::commit();
+}catch (\Exception $e){
+    $this-&gt;error(&apos;操作失败&apos;,null,101);
+    Db::rollback();
+}</code></pre></li>
+<li><p>isset()<br>格式：bool isset ( mixed var [, mixed var [, …]] )<br>返回值：<br>若变量不存在则返回 FALSE<br>若变量存在且其值为NULL，也返回 FALSE<br>若变量存在且值不为NULL，则返回 TURE<br>同时检查多个变量时，每个单项都符合上一条要求时才返回 TRUE，否则结果为 FALSE<br>更多说明：<br>使用 unset() 释放变量之后，它将不再是 isset()。<br>PHP函数isset()只能用于变量，传递任何其它参数都将造成解析错误。<br>检测常量是否已设置可使用 defined() 函数。</p>
+</li>
+</ol>
+<p>empty()<br>格式：bool empty ( mixed var )<br>返回值：<br>若变量不存在则返回 TRUE<br>若变量存在且其值为””、0、”0”、NULL、、FALSE、array()、var $var; 以及没有任何属性的对象，则返回 TURE<br>若变量存在且值不为””、0、”0”、NULL、、FALSE、array()、var $var; 以及没有任何属性的对象，则返回 FALSE<br>更多说明：<br>empty()的返回值=!(boolean) var，但不会因为变量未定义而产生警告信息。参见转换为布尔值获取更多信息。<br>empty() 只能用于变量，传递任何其它参数都将造成Paser error而终止运行。<br>检测常量是否已设置可使用 defined() 函数。</p>
+<p>empty() 和 isset() 虽然都是变量处理函数，它们都用来判断变量是否已经配置，它们却是有一定的区别：empty还会检测变量是否为空、为零。当一个变量值为0，empty() 认为这个变量同等于空，即相当于没有设置。<br>比如检测 $id 变量，当 $id=0 时，用empty() 和 isset() 来检测变量 $id 是否已经配置，两者将返回不同的值—— empty() 认为没有配置，isset() 能够取得 $id 的值。</p>
+<ol start="19">
+<li>php代码拼接<?php if(isset($val['link'])){ ?>
+<pre><code>     &lt;a target=&quot;_blank&quot; href=&quot;&lt;?php echo url(&apos;admin/&apos;.$val[&apos;link&apos;]); ?&gt;&quot;&gt;&lt;?php echo $val[&apos;name&apos;]; ?&gt;&lt;/a&gt;
+&lt;?php }else{ echo $val[&apos;name&apos;]; } ?&gt;</code></pre></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>layer弹出层常用</title>
+    <url>/2019/11/28/layer%E5%BC%B9%E5%87%BA%E5%B1%82%E5%B8%B8%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="layer弹出层常用"><a href="#layer弹出层常用" class="headerlink" title="layer弹出层常用"></a>layer弹出层常用</h2><ol>
+<li><p>layer.confirm(‘一个月只能申请5次修改\n’ +</p>
+<pre><code>        &apos;审核将会在7个工作日内完成，请确认是否提交修改申请？&apos;, {
+    btn: [&apos;确定&apos;,&apos;取消&apos;], //按钮
+    title:&apos;提示&apos;,
+}, function(){
+     console.log(&apos;点了确定&apos;);
+
+    layer.msg(&apos;修改成功&apos;, {icon: 1,time:1500,end:function () {
+        // window.location.href=&quot;&lt;?=url(&apos;miniapp/index&apos;)?&gt;&quot;;    //跳转到指定页面
+        window.location.reload();  // 刷新页面
+       }});
+
+   layer.msg(info, {icon: 2,time:1800});</code></pre></li>
+</ol><a id="more"></a>
+<pre><code>}, function(){
+    layer.closeAll();   // 关闭弹窗
+});</code></pre><ol start="2">
+<li>icon  1 打勾,2 打叉。</li>
+</ol>
+<ol start="3">
+<li>layer.msg(‘请先输入功能介绍’);      //没有带icon的msg，是灰色透明的弹窗</li>
+</ol>
+<ol start="4">
+<li>layer.alert(‘测试’);    // 带头部和确认的弹窗           </li>
+</ol>
+<ol start="5">
+<li>layer.msg(‘提示内容’, {icon: 2,time:1800});     //默认是2秒关闭。 没带确认键的弹窗</li>
+</ol>
+<ol start="6">
+<li>layer.alert(‘一次只能添加一个类目’,{title:’提示’});     // 带头部和确认的弹窗，自定义title</li>
+</ol>
+<ol start="7">
+<li><p>var index = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2</p>
+</li>
+<li><p>layer.load(0, {shade: [0.1,’#fff’]}); //0代表加载的风格，支持0-2    有透明层不能点击</p>
+</li>
+<li><p>layer.closeAll(‘loading’);   // 关闭加载框</p>
+</li>
+</ol>
+<ol start="10">
+<li><p>弹窗中加入代码</p>
+<p>layer.open({</p>
+<pre><code>type: 1,
+title: &apos;打印预览&apos;,
+skin: &apos;layui-layer-rim&apos;, //加上边框
+area: [&apos;726px&apos;, &apos;595px&apos;], //宽高
+content: $(this).siblings(&apos;.print_box&apos;)</code></pre><p>   })</p>
+</li>
+</ol>
+<ol start="11">
+<li><p>//iframe窗   </p>
+</li>
+</ol>
+<p>layer.open({<br>  type: 2,           //type=2是打开页面地址，type=1是打开html标签<br>  title: false,<br>  closeBtn: 0, //不显示关闭按钮<br>  shade: [0],<br>  area: [‘340px’, ‘215px’],<br>  offset: ‘rb’, //右下角弹出<br>  time: 2000, //2秒后自动关闭<br>  anim: 2,<br>  content: [‘test/guodu.html’, ‘no’], //iframe的url，no代表不显示滚动条<br>  end: function(){ //此处用于演示</p>
+<p>  }<br>});</p>
+<p>layer.open({<br>      type: 1,<br>      title: ‘很多时候，我们想最大化看，比如像这个页面。’,<br>      shadeClose: true,    // 点击蒙层是否可关闭<br>      shade: false,   //背景蒙层，0.4<br>      maxmin: true, //开启最大化最小化按钮<br>      area: [‘893px’, ‘600px’],<br>      content: ‘//fly.layui.com/‘      // 或 $(‘#content’)<br>    });</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>layer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql常用</title>
+    <url>/2019/11/28/mysql%E5%B8%B8%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="mysql常用小记"><a href="#mysql常用小记" class="headerlink" title="mysql常用小记"></a>mysql常用小记</h2><p>删除表的记录<br>DELETE from ims_sudu8_page where openid = ‘xxxx’</p><a id="more"></a>
+<p>SELECT * from ims_cjdc_goods WHERE store_id = 3</p>
+<p>update ims_sudu8_page_food set uniacid=’666666’ where id&lt;30;</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git常用命令</title>
+    <url>/2019/11/28/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><p>删除远端分支：<br>git push origin –delete dev_ygy</p>
+<a id="more"></a>
+
+<p>注：先add文件，在commit提交<br>1.$ git add file1.txt<br>  $ git add file2.txt file3.txt      1次add多个文件<br>  $ git commit -m “add 3 files.”git add 文件</p>
+<p>方法一 git add 添加多个文件，文件之间以空格隔开</p>
+<p>git add file1 file2 file3</p>
+<p>方法二 多次git add</p>
+<p>git add file1<br>git add file2<br>git add file2</p>
+<p>方法三 添加指定目录下的文件<br>config目录下及子目录下所有文件，home目录下的所有.php文件</p>
+<p>git config/*<br>git home/*.php</p>
+<p>方法四 git add . 添加所有的文件， 或者 git add –all 添加所有的文件</p>
+<p>git add .<br>git add –all</p>
+<p>git add 文件夹<br>git add 文件夹名</p>
+<hr>
+<ol>
+<li><p>git status命令可以让我们时刻掌握仓库当前的状态，上面的命令输出告诉我们，readme.txt被修改过了，但还没有准备提交的修改。<br>虽然Git告诉我们readme.txt被修改了，但如果能看看具体修改了什么内容，自然是很好的。比如你休假两周从国外回来，第一天上班时，已经记不清上次怎么修改的readme.txt，所以，需要用git diff这个命令看看：</p>
+<p>git status  改了哪些文件<br>git diff    改动了什么具体内容</p>
+</li>
+<li><p>HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id。</p>
+</li>
+</ol>
+<p>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。</p>
+<p>要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。</p>
+<ol start="3">
+<li>$ git checkout – readme.txt      可以丢弃工作区的修改：</li>
+<li>git checkout – file命令中的–很重要，没有–，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到git checkout命令。</li>
+</ol>
+<ol start="5">
+<li>git branch -a     查看所有远程分支</li>
+</ol>
+<hr>
+<h1 id="1-为避免冲突需要先同步下远程仓库"><a href="#1-为避免冲突需要先同步下远程仓库" class="headerlink" title="1.为避免冲突需要先同步下远程仓库"></a>1.为避免冲突需要先同步下远程仓库</h1><pre><code>git pull</code></pre><h1 id="2-在本地项目目录下删除缓存"><a href="#2-在本地项目目录下删除缓存" class="headerlink" title="2.在本地项目目录下删除缓存"></a>2.在本地项目目录下删除缓存</h1><pre><code>git rm -r --cached .</code></pre><h1 id="3-再次add所有文件"><a href="#3-再次add所有文件" class="headerlink" title="3.再次add所有文件"></a>3.再次add所有文件</h1><p>输入以下命令，再次将项目中所有文件添加到本地仓库缓存中</p>
+<pre><code>git add .</code></pre><h1 id="4-添加commit，提交到远程库"><a href="#4-添加commit，提交到远程库" class="headerlink" title="4.添加commit，提交到远程库"></a>4.添加commit，提交到远程库</h1><p>git commit -m “filter new files”</p>
+<pre><code>git push</code></pre>]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>js获取当前时间戳</title>
+    <url>/2019/11/28/js%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E6%88%B3/</url>
+    <content><![CDATA[<h2 id="js获取当前时间戳的方法"><a href="#js获取当前时间戳的方法" class="headerlink" title="js获取当前时间戳的方法"></a>js获取当前时间戳的方法</h2><p>第一种方法：</p><p>var timestamp = Date.parse(new Date());<br>结果：1280977330000<br>第二种方法：</p><a id="more"></a>
+
+<p>var timestamp = (new Date()).valueOf();<br>结果：1280977330748</p>
+<p>第三种方法：</p>
+<p>var timestamp=new Date().getTime()；<br>结果：1280977330748</p>
+<p>第一种：获取的时间戳是把毫秒改成000显示，</p>
+<p>第二种和第三种是获取了当前毫秒的时间戳。</p>
+<h2 id="获取当前系统时间"><a href="#获取当前系统时间" class="headerlink" title="获取当前系统时间"></a>获取当前系统时间</h2><p>Js获取当前系统时间</p>
+<p>var myDate = new Date();<br>myDate.getYear();        //获取当前年份(2位)<br>myDate.getFullYear();    //获取完整的年份(4位,1970-????)<br>myDate.getMonth();       //获取当前月份(0-11,0代表1月)<br>myDate.getDate();        //获取当前日(1-31)<br>myDate.getDay();         //获取当前星期X(0-6,0代表星期天)<br>myDate.getTime();        //获取当前时间(从1970.1.1开始的毫秒数)<br>myDate.getHours();       //获取当前小时数(0-23)<br>myDate.getMinutes();     //获取当前分钟数(0-59)<br>myDate.getSeconds();     //获取当前秒数(0-59)<br>myDate.getMilliseconds();    //获取当前毫秒数(0-999)<br>myDate.toLocaleDateString();     //获取当前日期<br>var mytime=myDate.toLocaleTimeString();     //获取当前时间<br>myDate.toLocaleString( );        //获取日期与时间</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建shadowsocksR科学上网</title>
+    <url>/2019/11/21/%E6%90%AD%E5%BB%BAshadowsocksR%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</url>
+    <content><![CDATA[<h2 id="1、linux上搭建ssr方法"><a href="#1、linux上搭建ssr方法" class="headerlink" title="1、linux上搭建ssr方法"></a>1、linux上搭建ssr方法</h2><p>手把手教你搭建shadowsocksR科学上网 搭建SSR教程 适用于所有linux主机</p>
+<a id="more"></a>
+<p>本教程适用于所有基于linux系统的服务器，但是如果是新手用户，建议使用vultr。 最大原因：vultr是目前唯一一家可以随意换IP的商家。如果IP被封，直接删除服务器再开服务器就是新IP了。vultr按小时计费，有IPv4的套餐最低3.5美元一个月，不过并不是这么贵，因为vultr充值就赠送50美元，后台分享推特再赠送3美元。 vultr赠送50美元活动地址：<a href="https://www.vultr.com/" target="_blank" rel="noopener">https://www.vultr.com/</a> 支持支付宝和微信支付，非常适合国人用户。建议先用微信支付一次，下次重装系统或者换电脑，用不同的邮箱不同的支付方式再注册。</p>
+<p>vultr注册及开通VPS 首先点击<a href="https://www.vultr.com/" target="_blank" rel="noopener">https://www.vultr.com/</a> 进入活动页面</p>
+<p><img src="/images/v1.png" alt="暂无图片"></p>
+<p>然后输入邮箱和密码，邮箱使用国内邮箱也可以，密码不能小于十位，而且必须是大写字母+小写字母+数字的组合。输入好之后点击Create Account按钮。这时候注册的邮箱会收到一封验证邮件（有时候验证邮箱也会跑到邮件垃圾箱)，点击里面的验证按钮，就会跳转到vultr后台，然后再登录就可以了。<br><img src="/images/v2.png" alt="暂无图片"></p>
+<p>然后在vultr后台左侧点击Billing，可以看到支付方式有支付宝和微信支付，国人用非常方便，这里选择支付宝或者微信，然后选择充值金额，点击下面的Pay with Alipay跳转到相应的支付工具进行支付就可以了。接下来点击后台右侧有一个漂浮的蓝色“+”号，开始创建服务器。<br><img src="/images/v3.png" alt="暂无图片"></p>
+<p>可以看到目前vultr全球有16个机房，不过想日本机房被用的太狠了，基本没有可用的IP，建议选择美国机房，反正是按小时计费的，可以以后试试看哪个机房适合自己的网络。<br><img src="/images/v4.png" alt="暂无图片"></p>
+<p>接下来选择操作系统，使用默认的cnetos7 64位的即可。下面是选择套餐，虽然有月付2.5美元的套餐，不过只有IPv6，我们就选择月付3.5美元的套餐就可以了。<br><img src="/images/v5.png" alt="暂无图片"></p>
+<p>接下来什么都不用选，直接点击Deploy Now部署服务器<br><img src="/images/v6.png" alt="暂无图片"></p>
+<p>然后开始服务器状态是installing，大约四五分钟之后就如图所示安装好系统了，点击VPS名字或者其他按钮就可以查看服务器详情，以后每次登录后台，点击左侧的Servers就可看到自己的服务器信息了<br><img src="/images/v7.png" alt="暂无图片"></p>
+<p>点进去查看服务器信息，可以看到系统和IP之类的，点击小眼睛图标，就可以看到服务器密码了。</p>
+<p>使用xshell连接服务器</p>
+<p>接下来使用xshell连接服务器就行了，xshell大家可以在自己电脑用的安全软件比如360安全卫士的软件管家里自行下载，也可以直接百度xshell下载，下载正版的即可。下载之后安装的时候注意两点即可：安装类型选择“免费为家庭/学校”，语言选择Chinese simplified即简体中文即可。<br><img src="/images/v8.png" alt="暂无图片"></p>
+<p>接下来这里服务器名称这里随便写，只是个标记，重点是填写服务器IP。然后端口号用默认的22端口就可以（只有搬瓦工不是默认端口，搬瓦工的登录端口在搬瓦工发你的邮件里）。然后点击确定，用户名root密码就是刚才的密码就可以登录了。</p>
+<p>一键搭建shadowsocksR 登录VPS之后，复制以下代码，在xshell里右键选择粘贴，然后回车：wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</p>
+<p><img src="/images/v9.png" alt="暂无图片"></p>
+<p>接下来开始安装，首先选择1，然后回车 要显示的IP和域名，这里什么都不用输入，直接回车 用户名，这里随便起个名字，然后回车</p>
+<p><img src="/images/v10.png" alt="暂无图片"></p>
+<p>接下来设置端口，不要用默认的，自己写个数字，建议在3000-30000之间，输入数字之后回车 接下设置密码，设置好之后回车 然后设置加密方式，可以输入7或者10或者13，只输入一个即可，然后回车</p>
+<p><img src="/images/v11.png" alt="暂无图片"></p>
+<p>然后设置用户协议插件之类的，这几个意义都不大，都直接回车即可<br><img src="/images/v12.png" alt="暂无图片"></p>
+<p>一直回车到这里，设置的用户可使用的总流量上限，这个比较有用，防止流量超标，直接输入数字即可，单位GB不用输入，这里是根据这个套餐输入的500然后直接回车的 禁止的端口这里一般也不用设置，如果是用来玩游戏，不像让用户用来浏览网站，可以输入80，443 这里就什么都不输入直接回车<br><img src="/images/v13.png" alt="暂无图片"></p>
+<p>然后让确认是否开始安装，输入y 回车，就开始自动安装了<br><img src="/images/v14.png" alt="暂无图片"></p>
+<p>一般5分钟左右，最多10分钟，出现如图页面，就安装成了。复制上面所有的信息，用txt或者word文档保存好。</p>
+<hr>
+<hr>
+<hr>
+<h2 id="2、linux上搭建ss方法"><a href="#2、linux上搭建ss方法" class="headerlink" title="2、linux上搭建ss方法"></a>2、linux上搭建ss方法</h2><p>使用阿里云ecs主机打造shadowsocks服务器,实现科学上网<br>发表于 2019-04-11 | 更新于 2019-08-23 | 分类于 笔记<br>要想打造一台自己的ss(shadowsocks)或ssr（shadowsocksR）服务器。要具备一下条件：</p>
+<p>要有一台自己的服务器vps或ecs云主机都可以，虚拟主机是不行滴<br>服务器一定要在海外或中国香港。推荐日、韩、香港、新加坡服务器<br>下面已阿里ecs为实例说明，主要是ecs降价了366/年的价格速度很快。比网上说的搬瓦工、Vultr强多了。<br>一 购买云主机<br>进入 <a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=627kscqf" target="_blank" rel="noopener">https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=627kscqf</a><br>选择第一项入门级配置的第一个就可以1核1G 40G系统盘，推荐选项</p>
+<p>区域：新加坡<br>操作系统：centos 7<br>带宽：1M<br>区域选新加坡或香港都可以，不建议选欧美的，延时会比新加坡或香港高一丢丢。<br>带宽选择1M基本够用了，价格只有￥366/年,和买个爱奇艺会员差不多，2年也才￥586，非常便宜。<br>默认选择的是2M ￥504/年的价格对我来说有点贵，如果你看电影多，可以选这个。<br>操作系统选centos7，是因为下面的操作命令是基于centos写的，如果你有一定linux基础，其实选择什么都可以。<br>选好了付款就可以了，支付宝付款很方便，还可以分期。</p>
+<p>二 打造shadowsocks服务环境<br>买好了服务器，可以使用终端工具登录服务器。Xshell、Putty、SecureCRT都可以。<br>我平时使用的是deepin，所以使用自带的深度终端进行链接。给深度打个小广告，这是最好用的linux操作系统。</p>
+<p>注意，我买的是新加坡的服务器，执行ssh命令登录时有点慢，需要等待20秒左右才会出现密码输入。但是ping的时候很快，登录后使用时也很快，只是ssh验证慢。不知道什么原因。</p>
+<p>网上关于shadowsocks的安装教程有很多，但好多都比较麻烦，好在有人将安装过程做了打包。感谢一下作者。<br>开始正式安装，我们用最简单的方式，执行一下命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum -y install wget</span><br><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/CecilWu/SSR-Chinese/master/ssr.sh &amp;&amp; chmod +x ssr.sh</span><br></pre></td></tr></table></figure>
+<p>耐心等待就可以了，下载完成后，我们执行ls会发现，在当前目录出现了一个ssr.sh文件。这个就是管理脚本，我们运行它</p>
+<p>运行管理脚本</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./ssr.sh</span><br></pre></td></tr></table></figure>
+<p>脚本运行起来了，内容如下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ShadowsocksR 一键管理脚本 [v2.0.38]</span><br><span class="line">  ---- Toyo | doub.io/ss-jc42 ----</span><br><span class="line"></span><br><span class="line">  1. 安装 ShadowsocksR</span><br><span class="line">  2. 更新 ShadowsocksR</span><br><span class="line">  3. 卸载 ShadowsocksR</span><br><span class="line">  4. 安装 libsodium(chacha20)</span><br><span class="line">————————————</span><br><span class="line">  5. 查看 账号信息</span><br><span class="line">  6. 显示 连接信息</span><br><span class="line">  7. 设置 用户配置</span><br><span class="line">  8. 手动 修改配置</span><br><span class="line">  9. 切换 端口模式</span><br><span class="line">————————————</span><br><span class="line"> 10. 启动 ShadowsocksR</span><br><span class="line"> 11. 停止 ShadowsocksR</span><br><span class="line"> 12. 重启 ShadowsocksR</span><br><span class="line"> 13. 查看 ShadowsocksR 日志</span><br><span class="line">————————————</span><br><span class="line"> 14. 其他功能</span><br><span class="line"> 15. 升级脚本</span><br><span class="line"> </span><br><span class="line"> 当前状态: 已安装 并 已启动</span><br><span class="line"> 当前模式: 单端口</span><br><span class="line"></span><br><span class="line">请输入数字 [1-15]：</span><br></pre></td></tr></table></figure>
+<p>输入1开始安装。</p>
+<p>设置端口<br>安装完毕后会要求你自定义端口，默认是2333，我们可以自己设置一个<br>设置密码<br>端口设置完成会提示你输入密码，输入一个密码回车即可。<br>选择加密方式<br>这里有很多加密方式，选择一种即可，一般选10：aes-256-cfb或rc4-md5<br>协议兼容原版<br>输入y回车<br>混淆插件<br>选择一种混淆插件，默认是5，选择1也可以<br>连接数和限速设置<br>个人用可以不设置，直接回车<br>安装部署<br>完成上面的操作，程序会开始下载需要的包，下载完成后会提示是否部署<br>Is this ok [y/n]<br>出现这个提示输入y就可以了，等它自己安装完成。<br>安装完成后会显示先前的配置。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">===================================================</span><br><span class="line"></span><br><span class="line"> ShadowsocksR账号 配置信息：</span><br><span class="line"></span><br><span class="line"> I  P	    : 47.123.123.123</span><br><span class="line"> 端口	    : 2333</span><br><span class="line"> 密码	    : 123456</span><br><span class="line"> 加密	    : rc4-md5</span><br><span class="line"> 协议	    : auth_sha1_v4_compatible</span><br><span class="line"> 混淆	    : plain</span><br><span class="line"> 设备数限制 : 0(无限)</span><br><span class="line"> 单线程限速 : 0 KB/S</span><br><span class="line"> 端口总限速 : 0 KB/S</span><br><span class="line"> SS    链接 : ss://sdfsdfsdfsdfsdfaadsffasd </span><br><span class="line"> SS  二维码 : http://doub.pw/qr/qr.php?text=ss://asdfsdfsadfsdfsdf</span><br><span class="line"> SSR   链接 : ssr://dsfsdfsdfsdf </span><br><span class="line"> SSR 二维码 : http://doub.pw/qr/qr.php?text=ssr://sdfsdfsdfsd</span><br><span class="line"> </span><br><span class="line">  提示: </span><br><span class="line"> 在浏览器中，打开二维码链接，就可以看到二维码图片。</span><br><span class="line"> 协议和混淆后面的[ _compatible ]，指的是 兼容原版协议/混淆。</span><br><span class="line"></span><br><span class="line">===================================================</span><br></pre></td></tr></table></figure>
+<p>看到这个提示说明安装成功了。后期如果需要重新配置或查看配置，可以执行ssr.sh。还会弹出操作菜单。</p>
+<p>设置阿里云主机端口<br>这一步很重要，阿里云入方向默认只开了22和3389端口。我们需要将Shadowsocks需要的端口打开，上面我们配置的是2333。具体方法如下<br>进入控制台-》商品与服务-》云服务器ecs， 然后在左侧菜单中找到安全组。右侧找到服务器，点击配置规则。<br>在配置页面选择入方向。点击右上角的添加安全规则。进行配置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">规则方向：入方向</span><br><span class="line">授权策略：允许</span><br><span class="line">协议类型：自定义TCP</span><br><span class="line">端口范围：2000/3000</span><br><span class="line">优先级:1</span><br><span class="line">授权类型：IPv4地址段访问</span><br><span class="line">授权对象：0.0.0.0/0</span><br><span class="line">这样你的电脑无论在哪里都可以链接到服务器了</span><br></pre></td></tr></table></figure>
+<p>安装客户端<br>Shadowsocks客户端有很多百度一下就可以了。安装后根据服务器的设置，配置一下客户端的参数就可以了。<br>我用的是deepin，使用的Shadowsocks for Deepin很好用，下载地址 <a href="https://github.com/lolimay/shadowsocks-deepin/blob/master/docs/README_CN.md" target="_blank" rel="noopener">https://github.com/lolimay/shadowsocks-deepin/blob/master/docs/README_CN.md</a></p>
+<p>参考资料<br><a href="https://www.5xiaobo.com/?id=693" target="_blank" rel="noopener">https://www.5xiaobo.com/?id=693</a></p>
+<p><a href="https://www.xingjiehu.com/2019/04/11/ck2zvjtz00031o3omue3lzq62/" target="_blank" rel="noopener">https://www.xingjiehu.com/2019/04/11/ck2zvjtz00031o3omue3lzq62/</a></p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>科学上网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>php启动报错Call to undefined function mysql_connect()</title>
+    <url>/2019/11/16/php%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99Call%20to%20undefined%20function%20mysql_connect()/</url>
+    <content><![CDATA[<h2 id="php项目启动报错Fatal-error-Uncaught-Error-Call-to-undefined-function-mysql-connect"><a href="#php项目启动报错Fatal-error-Uncaught-Error-Call-to-undefined-function-mysql-connect" class="headerlink" title="php项目启动报错Fatal error: Uncaught Error: Call to undefined function mysql_connect()"></a>php项目启动报错Fatal error: Uncaught Error: Call to undefined function mysql_connect()</h2><a id="more"></a><ol>
+<li><p>首先是应该确认下自己使用的php的版本。如果是7.x版本，你应该使用mysqli_connect()，因为在7.x版本中已经舍弃了mysql_connect()，或者你可以使用pdo。当然5.x版本mysql_connect()和mysqli_connect()是都可以用的。</p>
+</li>
+<li><p>如果第一步没有成功，你可以做如下操作：</p>
+<p>（1）5.x版本：打开php.ini(记事本或者文本编辑器都可以)，查找mysql，找到extension=php_mysqli.dll 和 extension=php_mysql.dll，把前面的 ‘;’ 去掉。（7.x版本的话只需去掉extension=php_mysqli.dll前的’;’ ，而且你发现根本没有extension=php_mysql.dll，因为它已经被舍弃了）</p>
+<p>（2）然后查找extension_dir = “ext”，同样把前面的 ‘;’ 去掉，5.x和7.x一样。</p>
+<p>（3）然后重启Apache即可。</p>
+</li>
+</ol>
+<p>本地是7.x的版本导致</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建个人博客</title>
     <url>/2019/11/14/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="主要分为"><a href="#主要分为" class="headerlink" title="主要分为"></a>主要分为</h2><ol>
 <li><h3 id="静态-Hexo-Jekyll-Octopress-可以部署在github-pages上"><a href="#静态-Hexo-Jekyll-Octopress-可以部署在github-pages上" class="headerlink" title="静态 Hexo/Jekyll/Octopress 可以部署在github pages上"></a>静态 Hexo/Jekyll/Octopress 可以部署在github pages上</h3></li>
-<li><h3 id="动态-Ghost、Wordpress"><a href="#动态-Ghost、Wordpress" class="headerlink" title="动态 Ghost、Wordpress"></a>动态 Ghost、Wordpress</h3></li>
-</ol><a id="more"></a>
-<h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><ol>
+<li><h3 id="动态-Ghost、Wordpress"><a href="#动态-Ghost、Wordpress" class="headerlink" title="动态 Ghost、Wordpress"></a>动态 Ghost、Wordpress</h3><a id="more"></a>
+<h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2></li>
 <li><p>动态博客的优点</p>
 <ul>
 <li>最后，也列举一下 Ghost 的优点，或许大点的团队更适合它。</li>
@@ -60,17 +448,10 @@
       </tags>
   </entry>
   <entry>
-    <title>直接新建</title>
-    <url>/2019/11/11/test/</url>
-    <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2>]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-  </entry>
-  <entry>
     <title>我的第一篇文章，这是标题吗？</title>
-    <url>/2019/11/11/ygy/</url>
-    <content><![CDATA[<p>这里是描述吗？<br>换行怎么用</p><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
+    <url>/2019/11/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
 
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
@@ -93,25 +474,6 @@
       </categories>
       <tags>
         <tag>博客</tag>
-        <tag>测试</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2019/11/10/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
   </entry>
 </search>

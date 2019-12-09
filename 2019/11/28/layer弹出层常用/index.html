@@ -51,14 +51,18 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="GoodBox">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;index.html">
+  <meta name="description" content="layer弹出层常用 layer.confirm(‘一个月只能申请5次修改\n’ +         &amp;apos;审核将会在7个工作日内完成，请确认是否提交修改申请？&amp;apos;, {     btn: [&amp;apos;确定&amp;apos;,&amp;apos;取消&amp;apos;], &#x2F;&#x2F;按钮     title:&amp;apos;提示&amp;apos;, }, function(){      console.log(&amp;a">
+<meta name="keywords" content="layer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="layer弹出层常用">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;28&#x2F;layer%E5%BC%B9%E5%87%BA%E5%B1%82%E5%B8%B8%E7%94%A8&#x2F;index.html">
 <meta property="og:site_name" content="GoodBox">
+<meta property="og:description" content="layer弹出层常用 layer.confirm(‘一个月只能申请5次修改\n’ +         &amp;apos;审核将会在7个工作日内完成，请确认是否提交修改申请？&amp;apos;, {     btn: [&amp;apos;确定&amp;apos;,&amp;apos;取消&amp;apos;], &#x2F;&#x2F;按钮     title:&amp;apos;提示&amp;apos;, }, function(){      console.log(&amp;a">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2019-11-28T13:19:00.220Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/2019/">
+<link rel="canonical" href="http://yoursite.com/2019/11/28/layer%E5%BC%B9%E5%87%BA%E5%B1%82%E5%B8%B8%E7%94%A8/">
 
 
 <script id="page-configurations">
@@ -66,13 +70,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>归档 | GoodBox</title>
+  <title>layer弹出层常用 | GoodBox</title>
   
 
 
@@ -201,209 +205,154 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 9 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh_CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/28/layer%E5%BC%B9%E5%87%BA%E5%B1%82%E5%B8%B8%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="GoodBox">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GoodBox">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          layer弹出层常用
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-28 14:50:05 / 修改时间：21:19:00" itemprop="dateCreated datePublished" datetime="2019-11-28T14:50:05+08:00">2019-11-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
+        <h2 id="layer弹出层常用"><a href="#layer弹出层常用" class="headerlink" title="layer弹出层常用"></a>layer弹出层常用</h2><ol>
+<li><p>layer.confirm(‘一个月只能申请5次修改\n’ +</p>
+<pre><code>        &apos;审核将会在7个工作日内完成，请确认是否提交修改申请？&apos;, {
+    btn: [&apos;确定&apos;,&apos;取消&apos;], //按钮
+    title:&apos;提示&apos;,
+}, function(){
+     console.log(&apos;点了确定&apos;);
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    layer.msg(&apos;修改成功&apos;, {icon: 1,time:1500,end:function () {
+        // window.location.href=&quot;&lt;?=url(&apos;miniapp/index&apos;)?&gt;&quot;;    //跳转到指定页面
+        window.location.reload();  // 刷新页面
+       }});
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-28T14:53:29+08:00"
-              content="2019-11-28">
-          11-28
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/28/%E5%85%B6%E4%BB%96/" itemprop="url">
-            <span itemprop="name">其他</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-28T14:50:05+08:00"
-              content="2019-11-28">
-          11-28
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/28/layer%E5%BC%B9%E5%87%BA%E5%B1%82%E5%B8%B8%E7%94%A8/" itemprop="url">
-            <span itemprop="name">layer弹出层常用</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-28T14:47:30+08:00"
-              content="2019-11-28">
-          11-28
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/28/mysql%E5%B8%B8%E7%94%A8/" itemprop="url">
-            <span itemprop="name">mysql常用</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-28T14:43:23+08:00"
-              content="2019-11-28">
-          11-28
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/28/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">git常用命令</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-28T14:38:59+08:00"
-              content="2019-11-28">
-          11-28
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/28/js%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E6%88%B3/" itemprop="url">
-            <span itemprop="name">js获取当前时间戳</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-21T19:58:36+08:00"
-              content="2019-11-21">
-          11-21
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/21/%E6%90%AD%E5%BB%BAshadowsocksR%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" itemprop="url">
-            <span itemprop="name">搭建shadowsocksR科学上网</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-16T14:50:55+08:00"
-              content="2019-11-16">
-          11-16
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/16/php%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99Call%20to%20undefined%20function%20mysql_connect()/" itemprop="url">
-            <span itemprop="name">php启动报错Call to undefined function mysql_connect()</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-14T19:43:55+08:00"
-              content="2019-11-14">
-          11-14
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/14/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
-            <span itemprop="name">搭建个人博客</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-11T22:39:55+08:00"
-              content="2019-11-11">
-          11-11
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/11/hello-world/" itemprop="url">
-            <span itemprop="name">我的第一篇文章，这是标题吗？</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
+   layer.msg(info, {icon: 2,time:1800});</code></pre></li>
+</ol><a id="more"></a>
+<pre><code>}, function(){
+    layer.closeAll();   // 关闭弹窗
+});</code></pre><ol start="2">
+<li>icon  1 打勾,2 打叉。</li>
+</ol>
+<ol start="3">
+<li>layer.msg(‘请先输入功能介绍’);      //没有带icon的msg，是灰色透明的弹窗</li>
+</ol>
+<ol start="4">
+<li>layer.alert(‘测试’);    // 带头部和确认的弹窗           </li>
+</ol>
+<ol start="5">
+<li>layer.msg(‘提示内容’, {icon: 2,time:1800});     //默认是2秒关闭。 没带确认键的弹窗</li>
+</ol>
+<ol start="6">
+<li>layer.alert(‘一次只能添加一个类目’,{title:’提示’});     // 带头部和确认的弹窗，自定义title</li>
+</ol>
+<ol start="7">
+<li><p>var index = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2</p>
+</li>
+<li><p>layer.load(0, {shade: [0.1,’#fff’]}); //0代表加载的风格，支持0-2    有透明层不能点击</p>
+</li>
+<li><p>layer.closeAll(‘loading’);   // 关闭加载框</p>
+</li>
+</ol>
+<ol start="10">
+<li><p>弹窗中加入代码</p>
+<p>layer.open({</p>
+<pre><code>type: 1,
+title: &apos;打印预览&apos;,
+skin: &apos;layui-layer-rim&apos;, //加上边框
+area: [&apos;726px&apos;, &apos;595px&apos;], //宽高
+content: $(this).siblings(&apos;.print_box&apos;)</code></pre><p>   })</p>
+</li>
+</ol>
+<ol start="11">
+<li><p>//iframe窗   </p>
+</li>
+</ol>
+<p>layer.open({<br>  type: 2,           //type=2是打开页面地址，type=1是打开html标签<br>  title: false,<br>  closeBtn: 0, //不显示关闭按钮<br>  shade: [0],<br>  area: [‘340px’, ‘215px’],<br>  offset: ‘rb’, //右下角弹出<br>  time: 2000, //2秒后自动关闭<br>  anim: 2,<br>  content: [‘test/guodu.html’, ‘no’], //iframe的url，no代表不显示滚动条<br>  end: function(){ //此处用于演示</p>
+<p>  }<br>});</p>
+<p>layer.open({<br>      type: 1,<br>      title: ‘很多时候，我们想最大化看，比如像这个页面。’,<br>      shadeClose: true,    // 点击蒙层是否可关闭<br>      shade: false,   //背景蒙层，0.4<br>      maxmin: true, //开启最大化最小化按钮<br>      area: [‘893px’, ‘600px’],<br>      content: ‘//fly.layui.com/‘      // 或 $(‘#content’)<br>    });</p>
 
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/layer/" rel="tag"># layer</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/28/mysql%E5%B8%B8%E7%94%A8/" rel="next" title="mysql常用">
+                  <i class="fa fa-chevron-left"></i> mysql常用
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2019/11/28/%E5%85%B6%E4%BB%96/" rel="prev" title="其他">
+                  其他 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -432,6 +381,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#layer弹出层常用"><span class="nav-number">1.</span> <span class="nav-text">layer弹出层常用</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
