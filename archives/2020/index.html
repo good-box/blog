@@ -51,18 +51,14 @@
   };
 </script>
 
-  <meta name="description" content="js获取当前时间戳的方法第一种方法：var timestamp = Date.parse(new Date());结果：1280977330000第二种方法：">
-<meta name="keywords" content="javascript">
-<meta property="og:type" content="article">
-<meta property="og:title" content="js获取当前时间戳">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;28&#x2F;js%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E6%88%B3&#x2F;index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="GoodBox">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2020&#x2F;index.html">
 <meta property="og:site_name" content="GoodBox">
-<meta property="og:description" content="js获取当前时间戳的方法第一种方法：var timestamp = Date.parse(new Date());结果：1280977330000第二种方法：">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2019-11-28T13:19:00.219Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/28/js%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E6%88%B3/">
+<link rel="canonical" href="http://yoursite.com/archives/2020/">
 
 
 <script id="page-configurations">
@@ -70,13 +66,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
+    isPost: false,
     isPage: false,
-    isArchive: false
+    isArchive: true
   };
 </script>
 
-  <title>js获取当前时间戳 | GoodBox</title>
+  <title>归档 | GoodBox</title>
   
 
 
@@ -205,106 +201,49 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh_CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/28/js%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E6%88%B3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="GoodBox">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GoodBox">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          js获取当前时间戳
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-11-28 14:38:59 / 修改时间：21:19:00" itemprop="dateCreated datePublished" datetime="2019-11-28T14:38:59+08:00">2019-11-28</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">笔记</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 10 篇日志。 继续努力。</span>
+      </div>
 
       
-        <h2 id="js获取当前时间戳的方法"><a href="#js获取当前时间戳的方法" class="headerlink" title="js获取当前时间戳的方法"></a>js获取当前时间戳的方法</h2><p>第一种方法：</p><p>var timestamp = Date.parse(new Date());<br>结果：1280977330000<br>第二种方法：</p><a id="more"></a>
-
-<p>var timestamp = (new Date()).valueOf();<br>结果：1280977330748</p>
-<p>第三种方法：</p>
-<p>var timestamp=new Date().getTime()；<br>结果：1280977330748</p>
-<p>第一种：获取的时间戳是把毫秒改成000显示，</p>
-<p>第二种和第三种是获取了当前毫秒的时间戳。</p>
-<h2 id="获取当前系统时间"><a href="#获取当前系统时间" class="headerlink" title="获取当前系统时间"></a>获取当前系统时间</h2><p>Js获取当前系统时间</p>
-<p>var myDate = new Date();<br>myDate.getYear();        //获取当前年份(2位)<br>myDate.getFullYear();    //获取完整的年份(4位,1970-????)<br>myDate.getMonth();       //获取当前月份(0-11,0代表1月)<br>myDate.getDate();        //获取当前日(1-31)<br>myDate.getDay();         //获取当前星期X(0-6,0代表星期天)<br>myDate.getTime();        //获取当前时间(从1970.1.1开始的毫秒数)<br>myDate.getHours();       //获取当前小时数(0-23)<br>myDate.getMinutes();     //获取当前分钟数(0-59)<br>myDate.getSeconds();     //获取当前秒数(0-59)<br>myDate.getMilliseconds();    //获取当前毫秒数(0-999)<br>myDate.toLocaleDateString();     //获取当前日期<br>var mytime=myDate.toLocaleTimeString();     //获取当前时间<br>myDate.toLocaleString( );        //获取日期与时间</p>
-
+    <div class="collection-year">
+      <h1 class="collection-header">2020</h1>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/javascript/" rel="tag"># javascript</a>
-          </div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-03-31T20:15:53+08:00"
+              content="2020-03-31">
+          03-31
+        </time>
+      </div>
 
-        
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2020/03/31/%E8%B0%B7%E6%AD%8C%E4%BA%91%E5%88%9B%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/" itemprop="url">
+            <span itemprop="name">谷歌云搭建v2ray</span>
+          </a>
+      </h2>
 
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/21/%E6%90%AD%E5%BB%BAs%E6%9C%8D%E5%8A%A1/" rel="next" title="搭建s服务">
-                  <i class="fa fa-chevron-left"></i> 搭建s服务
-                </a>
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/28/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="prev" title="git常用命令">
-                  git常用命令 <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-          </div>
-      </footer>
-    
+    </header>
   </article>
+
+
+    </div>
+  </div>
   
   
   
 
-  </div>
+  
+
 
 
           </div>
@@ -333,7 +272,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#js获取当前时间戳的方法"><span class="nav-number">1.</span> <span class="nav-text">js获取当前时间戳的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取当前系统时间"><span class="nav-number">2.</span> <span class="nav-text">获取当前系统时间</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
